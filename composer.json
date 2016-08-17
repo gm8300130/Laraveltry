@@ -4,11 +4,11 @@
     "keywords": ["framework", "laravel"],
     "license": "MIT",
     "type": "project",
-    "require": {/* 正式一定會安裝的套件 */
+    "require": {
         "php": ">=5.5.9",
         "laravel/framework": "5.2.*"     
     },
-    "require-dev": {/* dev mode 才會安裝的套件 */
+    "require-dev": {
         "fzaninotto/faker": "~1.4",
         "mockery/mockery": "0.9.*",
         "phpunit/phpunit": "~4.0",
