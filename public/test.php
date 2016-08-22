@@ -9,7 +9,7 @@ function DemoPushDeviceListMultipleNotification()
 	$push = new XingeApp(2100209145, 'c9776577e049b14b645d05043c5bf605');
 	$mess = new Message();
 	$mess->setExpireTime(86400);
-	$mess->setTitle('哈哈哈哈哈阿');
+	$mess->setTitle('Test');
 	$mess->setContent('哇哇哇哇嗚哇阿挖');
 	$mess->setType(Message::TYPE_NOTIFICATION);
 	$ret = $push->CreateMultipush($mess, XingeApp::IOSENV_DEV);
