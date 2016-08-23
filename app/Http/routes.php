@@ -58,11 +58,29 @@ Route::get('user/{name?}', function ($name ='king') {
 */
 
 Route::get('/',['as'=>'home.index' ,function () {
-    return 'index';
+    //return 'index';
+    //資料夾用 "." 區隔 
+    //return view('home.routetry');
+    return view('index');
+}]);
+
+Route::get('index',['as'=>'home.index' ,function () {
+    return view('index');
 }]);
 
 Route::get('about',['as'=>'about.index' ,function () {
-    return 'about';
+    //return 'about';
+    return view('about');
+}]);
+
+Route::get('post',['as'=>'post.index' ,function () {
+    //return 'about';
+    return view('post');
+}]);
+
+Route::get('contact',['as'=>'contact.index' ,function () {
+    //return 'about';
+    return view('contact');
 }]);
 
 // Route::get('hot/page/{page?}',['as'=>'posts.hot' ,function ($page) {
