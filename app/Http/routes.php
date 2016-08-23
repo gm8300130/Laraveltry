@@ -61,9 +61,10 @@ Route::get('/',['as'=>'home.index' ,function () {
     //return 'index';
     //資料夾用 "." 區隔 
     //return view('home.routetry');
-    $data=['name'=>'Simon'];
+    //$data=['name'=>'Simon'];
 
-    return view('home.index',$data);
+   // return view('home.index',$data);
+   return view('home.index');
 }]);
 
 Route::get('index',['as'=>'home.index' ,function () {
