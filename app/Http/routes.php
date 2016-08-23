@@ -61,7 +61,9 @@ Route::get('/',['as'=>'home.index' ,function () {
     //return 'index';
     //資料夾用 "." 區隔 
     //return view('home.routetry');
-    return view('index');
+    $data=['name'=>'Simon'];
+
+    return view('home.index',$data);
 }]);
 
 Route::get('index',['as'=>'home.index' ,function () {
@@ -83,6 +85,11 @@ Route::get('contact',['as'=>'contact.index' ,function () {
     return view('contact');
 }]);
 
+
+Route::get('bladetest/index',['as'=>'bladetest.index' ,function () {
+    //return 'about';
+    return view('bladetest.index');
+}]);
 // Route::get('hot/page/{page?}',['as'=>'posts.hot' ,function ($page) {
 //     return 'hot'.$page;
 // }]);
